@@ -26,6 +26,7 @@
 		line-height: 1;
 	}
 
+
 	ol, ul {
 		list-style: none;
 	}
@@ -112,6 +113,13 @@
 		.icon > .label {
 			display: none;
 		}
+
+	/* Copyleft symbol */
+	.copyleft {
+	  display:inline-block;
+	  transform: rotate(180deg);
+	}
+
 
 /* Wrapper */
 
