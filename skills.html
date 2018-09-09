@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lef Ioannidis - Projects</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="assets/css/base.css" />
+ 		<!-- Javascript to animate progress bars -->
+     	<script>
+			window.onload = function(e) {
+				var bars = document.getElementsByName("progressbar");
+				for(var i = 0; i < bars.length; i++) {
+					var minwidth = bars[i].style.width.split("%")[0];
+                    var maxwidth = bars[i].getAttribute("data-max");
+					move(bars[i], minwidth, maxwidth);
+				}
+			}
+
+			function move(elem, minwidth, maxwidth) {
+			  var width = minwidth;
+			  var id = setInterval(frame, 10);
+			  function frame() {
+				if (width >= maxwidth) {
+				  clearInterval(id);
+				} else {
+				  width++;
+				  elem.style.width = width + '%';
+				  elem.innerHTML = width * 1  + '%';
+				}
+			  }
+			}
+	    </script>
+
+    </head>
+
+<!--
+Programming Languages, Security, Formal Verification, Functional Programming, Systems, Architecture, Compilers, Performance Engineering.
+Haskell, C/C++, Go, Javascript, Python, SQL, LLVM, x86 ASM, Bash.
+Coq, Elixir, Lua, Swift, LATEX.
+Linux, Docker, Kubernetes, MongoDB, PostgreSQL, GIT, LLVM, GDB.
+-->
+	<body>
+		<div class="w3-container">
+		<h1>Software Skills &amp; Programming Languages</h1>
+			Security <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-blue-gray" style="width:30%" data-max="100">20%</div>
+			</div><br>
+			Compilers <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-brown" style="width:30%" data-max="85">20%</div>
+			</div><br>
+			Proofs &amp; Formal Verification <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-light-blue" style="width:30%" data-max="70">20%</div>
+			</div><br>
+ 			Functional Programming <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-blue-gray" style="width:30%" data-max="90">20%</div>
+			</div><br>
+			High Performance Computing <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-brown" style="width:30%" data-max="95">20%</div>
+			</div><br>
+			DevOps <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-light-blue" style="width:30%" data-max="80">20%</div>
+			</div><br>
+    		C/C++ <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-blue-gray" style="width:30%" data-max="100">20%</div>
+			</div><br>
+			Haskell <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-brown" style="width:30%" data-max="80">20%</div>
+			</div><br>
+			Python <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-light-blue" style="width:30%" data-max="90">20%</div>
+			</div><br>
+    		Go <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-blue-gray" style="width:30%" data-max="85">20%</div>
+			</div><br>
+			Javascript <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-brown" style="width:30%" data-max="70">20%</div>
+			</div><br>
+			LLVM/Assembly <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-light-blue" style="width:30%" data-max="95">20%</div>
+			</div><br>
+    		Coq <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-blue-gray" style="width:30%" data-max="55">20%</div>
+			</div><br>
+			Elixir <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-brown" style="width:30%" data-max="70">20%</div>
+			</div><br>
+			Lua <div class="w3-light-grey">
+				<div name="progressbar" class="w3-container w3-light-blue" style="width:30%" data-max="65">20%</div>
+			</div><br>
+		</div>
+</body>
+</html>
