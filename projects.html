@@ -7,41 +7,32 @@
 		<link rel="stylesheet" href="assets/css/gallery.css" />
 	</head>
 	<body>
-		<div class="row">
-          <div class="column">
-			<div class="content">
-			  <img src="assets/css/images/machcoq.jpg" alt="MachCoq" style="width:100%">
+      <div class="wrapper">
+		  <div class="masonry-container">
+		  	<div class="content">
+              <a href="https://github.com/mit-pdos/machcoq">
+	          <img src="assets/css/images/machcoq.jpg" alt="MachCoq" style="width:100%"></a>
 			  <h3>MachCoq</h3>
 			  <p>A compiler from Coq's Gallina language to an ADT-based, static C++. Can then compile to static assembly with clang.</p>
-			</div>
-		  </div>
-		  <div class="column">
+		    </div>
 			<div class="content">
               <a href="https://github.com/elefthei/python-ml-microservice/">
 			  <img src="assets/css/images/pythonml.jpg" alt="Python ML microservice" style="width:100%"></a>
 			  <h3>Python ML microservice</h3>
 			  <p>A batteries-included, Deep Learning web-server container. Flask Python microservice with tensorflow on CPU/GPU in the back-end.</p>
 			</div>
-		  </div>
-		  <div class="column">
 			<div class="content">
               <a href="https://github.com/elefthei/WebTorch/">
 			  <img src="assets/css/images/webtorch.jpg" alt="WebTorch" align="middle" style="width:60%"></a>
 			  <h3>WebTorch</h3>
 			  <p>A single process Deep Learning web-server based on Nginx and Torch written in Lua, as seen in Nginxconf '17.</p>
 			</div>
-		  </div>
-		  <div class="column">
 			<div class="content">
               <a href="https://github.com/elefthei/krypto/">
 			  <img src="assets/css/images/krypto.jpg" alt="Krypto" style="width:70%"></a>
 			  <h3>Krypto</h3>
 			  <p>Common cryptography library for Elixir, based on Erlang OpenSSL bindings.</p>
 			</div>
-		  </div>
-        </div>
-        <div class="row">
-		  <div class="column">
 			<div class="content">
               <a href="https://github.com/elefthei/secure-C/">
 			  <img src="assets/css/images/securec.jpg" alt="Secure C" style="width:100%"></a>
@@ -49,9 +40,7 @@
 			  <p>A secure programming in C class taught in MIT in 2011-2014, involves buffer overflows, ret-to-libc, trampolines, application and OS level mitigations.</p>
 			</div>
 		  </div>
-
-
-		</div>
+	  </div>
  	<script>
 		window.onload = function() { document.body.className = ''; }
 		window.ontouchmove = function() { return false; }
