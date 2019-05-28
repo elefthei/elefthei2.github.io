@@ -1,0 +1,35 @@
+li.wide:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+li p {
+  margin: 0;
+}
+
+li p.separated {
+  margin-top: 0.5rem;
+}
+
+p.hanging {
+  text-indent: -1rem;
+  padding-left: 1rem;
+}
+
+.paper {
+  font-size: 20px;
+}
+
+.papers em > a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.papers em > a:hover {
+  font-size: 16px;
+  background-color: #a5fff9;
+}
+
