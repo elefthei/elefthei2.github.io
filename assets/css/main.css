@@ -93,6 +93,7 @@
 	.icon {
 		text-decoration: none;
 		position: relative;
+        opacity: 1;
 	}
 
 		.icon:before {
@@ -116,8 +117,6 @@
 
 
 /* Wrapper */
-
-
 	#wrapper {
 		-moz-animation: wrapper 1s forwards;
 		-webkit-animation: wrapper 1s forwards;
@@ -327,7 +326,7 @@
 		position: relative;
 		text-align: left;
         vertical-align: middle;
-		top: -1em;
+		top: -3em;
 		width: 90%;
 	}
 
@@ -339,7 +338,7 @@
 		}
 
 		#header p {
-			font-size: 1.2m;
+			font-size: 1.2em;
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.8;
 		}
@@ -574,7 +573,6 @@
 				font-size: 1em;
 			}
 
-    }
 /* Mobile (Portrait) */
 
 	@media screen and (max-width: 480px) {
