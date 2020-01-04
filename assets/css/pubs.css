@@ -1,17 +1,5 @@
-li.wide:not(:first-child) {
-  margin-top: 1.5rem;
-}
-
-li:not(:first-child) {
-  margin-top: 0.5rem;
-}
-
-li p {
-  margin: 0;
-}
-
-li p.separated {
-  margin-top: 0.5rem;
+dd {
+  opacity: 0.75;
 }
 
 p.hanging {
