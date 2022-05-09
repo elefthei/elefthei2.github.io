@@ -1,51 +1,195 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Eleftherios Lef Ioannidis - Personal website</title>
+        <title>Eleftherios (Lef) Ioannidis - Personal website</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://kit.fontawesome.com/0de118cce3.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="assets/css/base.css" />
+        <link rel="stylesheet" href="assets/css/pubs.css" />
     </head>
-    <body class="loading">
-        <div id="wrapper">
-            <div id="bg"></div>
-            <div id="main">
 
-                <!-- Header -->
-                    <header id="header">
-                        <h1><img src="assets/css/images/me.gif" width=180px max-width=100% height=auto /></h1></br>
-                        <h1>Eleftherios &nbsp;(Lef)&nbsp;Ioannidis</h1></br>
-                        <p>PhD student in University of Pennsylvania. Prior Investment Engineer at Bridgewater Associates,
-                        Software Architect at <a href="https://techcrunch.com/2016/09/12/unifyid-wants-to-bury-the-password-once-and-for-all/">UnifyID</a>, Security Engineer at Apple.
-                        </br>
-                        I like Formal Methods, Programming Languages, Category Theory, Security and building secure, scalable systems.
-                        You can refer to my <a href="pubs.html">publications</a>, <a href="pubs.html">talks</a>, <a href="pubs.html">classes</a> and
-                        <a href="https://github.com/elefthei">open source</a> work.
-                        </p>
-                        <nav>
-                            <ul>
+    <body>
+    <div class="main">
+      <div class="frame">
+        <table border="0">
+          <tbody>
+            <tr>
+              <td rowspan="7" width="300" align="left">
+              <img src="assets/css/images/me.jpg" alt="Lef Ioannidis" width="200" height="200"></th>
+              <br>
+              </td>
+              <td colspan="2" align="left">
+                <h1>Eleftherios (Lef) Ioannidis</h1>
+              </td>
+            </tr>
+            <td colspan="2"><p>PhD student in the University of Pennsylvania. I am broadly interested in formal proofs for distributed systems.
+            More specifically in the denotational semantics of programming languages and modal logics for distributed systems, as well as
+            zero-knowledge proofs and cryptographic compilers. I am coadvised by <a href="https://www.cis.upenn.edu/~sga001/">Sebastian Angel</a>
+            and <a href="https://www.cis.upenn.edu/~stevez/">Steve Zdancewic</a>. Prior, I completed by Bachelor's and Masters in MIT EECS, my
+            thesis advisors were <a href="http://people.csail.mit.edu/kaashoek/">Frans Kaashoek</a> and <a href="http://people.csail.mit.edu/nickolai/">Nickolai Zeldovich</a>.
+            </td>
+            <tr>
+            <tr>
+              <td width="100" align="left">Advisors:</td>
+              <td> Sebastian Angel, Steve Zdancewic</td>
+            </tr>
+            <tr>
+              <td width="100" align="left">E-mail:</td>
+              <td> <a href="mailto:elefthei@seas.upenn.edu" class="email">elefthei@seas.upenn.edu</a> </td>
+            </tr>
+            <tr>
+              <td width="100" align="left">Office:</td>
+              <td> <a href="https://goo.gl/maps/YqUKWzHkzKi3yc3R8">102 Moore Bldg</a> </td>
+            </tr>
+            <tr>
+              <td width="100" rowspan="5" align="left">Links:</td>
+              <td>
+              <a href="https://github.com/elefthei/resume/blob/master/elefthei.pdf">CV</a>,
+              <a href="https://github.com/elefthei">Github</a>,
+              <a href="https://twitter.com/elefthei">Twitter</a>,
+              <a href="https://www.linkedin.com/in/elefthei/">LinkedIn</a>,
+              <a href="assets/text/pgp.txt">PGP</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </br>
+        <h2>Publications</h2>
+        <dl class="papers">
+          <dt><i> Efficient Representation of Numerical Optimization Problems for SNARKs</i> &nbsp;
+            <a href="https://eprint.iacr.org/2021/1436.pdf">[eprint]</a>
+            <a href="https://github.com/eniac/otti">[code]</a>
+          </dt>
+          <dd>USENIX Security, Boston, MA, 2022</dd>
 
-                                <li><a href="pubs.html" title="Publications, talks, classes" class="fas fa-scroll"><span class="label">Publications</span></a></li>
-                                <li><a href="https://github.com/elefthei" title="Repositories" class="icon fa-github"><span class="label">Github</span></a></li>
-                                <li><a href="https://twitter.com/elefthei" title="Twitter" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                                <li><a href="https://github.com/elefthei/resume/blob/master/elefthei.pdf" title="My resume" class="far fa-file-pdf"><span class="label">Resume</span></a></li>
-                                <li><a href="assets/text/pgp.txt" title="Public Key" class="icon fa-lock"><span class="label">PGP</span></a></li>
-                                <li><a href="mailto:elefthei@mit.edu" title="Contact me" class="icon fa-envelope"><span class="label">Contact</span></a></li>
+          <dt><i> Normalization-by-evaluation and Metaprogramming with PHOAS</i> &nbsp;
+            <a href="assets/pdf/popl22src-paper.pdf">[paper]</a>
+            <a href="https://www.youtube.com/watch?v=8c-enu_jnK8&list=PLyrlk8Xaylp7z_JBz0PqiuaF1Eb8FB4LR">[video]</a>
+          </dt>
+          <dd>POPL SRC, Philadelphia, PA, 2022</dd>
 
-                            </ul>
-                        </nav>
-                    </header>
+          <dt><i>Extracting and optimizing low-level bytecode from high-level verified Coq</i> &nbsp;
+            <a href="https://pdos.csail.mit.edu/papers/elefthei-meng.pdf">[paper]</a>
+            <a href="https://github.com/mit-pdos/mcqc">[code]</a>
+          </dt>
+          <dd>Master's Thesis, PDOS at CSAIL, MIT</dd>
 
-                <!-- Footer -->
-                    <footer id="footer"><span class="copyleft">&copy;</span>&nbsp;Lef Ioannidis, last updated Nov 1, 2019</footer>
 
-            </div>
-        </div>
-        <script>
-            window.onload = function() { document.body.className = ''; }
-            window.ontouchmove = function() { return false; }
-            window.onorientationchange = function() { document.body.scrollTop = 0; }
-        </script>
-    </body>
+          <dt><i>MCQC: Extracting and optimizing formally verified code for systems programming</i> &nbsp;
+            <a href="https://pdos.csail.mit.edu/papers/mcqc:nfm19.pdf">[paper]</a>
+            <a href="https://github.com/mit-pdos/mcqc">[code]</a>
+            <a href="https://pdos.csail.mit.edu/papers/mcqc:nfm19-slides.pptx">[slides]</a>
+          </dt>
+          <dd>NASA Formal Methods (NFM), April 2019, Houston, TX</dd>
+
+           <dt><i>Parallel Back-End for the Halide Image Processing Language</i> &nbsp;
+            <a href="assets/pdf/superurop.pdf">[paper]</a>
+            <a href="assets/pdf/superurop-poster.pdf">[poster]</a>
+          </dt>
+          <dd>MIT Undergraduate Research Journal 2015, SuperUROP with Saman Amarasinghe, Cambridge, MA</dd>
+        </dl>
+
+        <h2>Tech Conference Talks</h2>
+        <dl class="papers">
+          <!-- <dt><i>Three eDSLs for business logic</i> &nbsp;
+            <a href="https://github.com/elefthei/nescala2020-edsl">[Scala notebooks]</a>
+          </dt>
+          <dd>NEScala 2020, February 2020, Brooklyn, NY (on-line due to COVID-19)</dd>
+           -->
+          <dt><i>Sharing is caring; Centralized PKI and masking for multi-organization blockchain sharing</i> &nbsp;
+            <a href="assets/pdf/blockchain.pdf">[paper]</a>
+          </dt>
+          <dd>Proposal, UC Berkley blockchain group, San Francisco, CA, 2017</dd>
+
+          <dt><i>Data-aware NGINX for Distributed Machine Learning</i> &nbsp;
+            <a href="https://www.youtube.com/watch?v=hjObXpM_ezg">[talk]</a>
+            <a href="https://github.com/elefthei/WebTorch">[code]</a>
+          </dt>
+          <dd>Nginxconf 2017 Annual Nginx Developer Conference, September 2017, Portland, OR</dd>
+
+          <dt><i>Auto-scalable microservices for Machine Learning</i> &nbsp;
+             <a href="https://www.youtube.com/watch?v=f3PfEctffAU">[talk]</a>
+             <a href="https://github.com/elefthei/python-ml-microservice">[client]</a>
+             <a href="https://github.com/elefthei/slob-poc">[server]</a>
+          </dt>
+          <dd>Dockercon 2017 Annual Docker User Conference, April 2017, Austin, TX</dd>
+
+          <dt><i>Secure and energy-efficient sampling of mobile sensors on iOS and Android</i> &nbsp;
+             <a href="https://www.ece.utexas.edu/plasma/madcon">[conference]</a>
+          </dt>
+          <dd>MadCon 2017 Annual Mobile development student conference, June 2017, Austin, TX</dd>
+        </dl>
+
+        <h2>Term papers</h2>
+        <dl class="papers">
+          <dt><i>Evaluating correlation between saliency maps and the solution of maze puzzles</i> &nbsp;
+            <a href="assets/pdf/mazes.pdf">[paper]</a>
+            <a href="https://github.com/elefthei/maze-saliency">[notebook]</a>
+          </dt>
+          <dd>Final paper for 6.861J Computational Theory of Intelligence, Spring 2019, CSAIL and Brain and CogSci, MIT, Cambridge, MA</dd>
+
+          <dt><i>PAL: Progressive Authentication for Linux System</i> &nbsp;
+             <a href="assets/pdf/pal.txt">[writeup]</a>
+             <a href="https://github.com/elefthei/PAL--Progressive-Authentication-for-Linux">[code]</a>
+          </dt>
+          <dd>Final project for 6.858 Computer Systems Security 2013, PDOS CSAIL, Cambridge, MA</dd>
+
+          <dt><i>A collaborative text editor</i> &nbsp;
+             <a href="assets/pdf/6033paper.pdf">[paper]</a>
+          </dt>
+          <dd>Final paper for 6.033 Computer Systems Engineering, won Excellent Writting Sample award, 2012, PDOS CSAIL, Cambridge, MA</dd>
+        </dl>
+
+
+        <h2>Teaching</h2>
+          <dt><i>CIS341: Compilers</i> &nbsp;
+             <a href="https://www.seas.upenn.edu/~cis341/current/">[class]</a>
+          </dt>
+          <dd>Undergraduate level course, taught by Steve Zdancewic, University of Pennsylvania, 2022.</dd>
+
+          <dt><i>CIS500: Software Foundations</i> &nbsp;
+             <a href="https://softwarefoundations.cis.upenn.edu/">[class]</a>
+          </dt>
+          <dd>Graduate level course, taught by Benjamin Pierce, University of Pennsylvania, 2022.</dd>
+
+          <dt><i>6.828: Operating Systems Engineering</i> &nbsp;
+             <a href="https://pdos.csail.mit.edu/6.828">[class]</a>
+          </dt>
+          <dd>MIT Graduate level Systems course, taught by Frans Kaashoek and Adam Belay, PDOS CSAIL, MIT, 2018.</dd>
+
+          <dt><i>6.858: Computer Systems Security</i> &nbsp;
+             <a href="https://pdos.csail.mit.edu/6.858">[class]</a>
+          </dt>
+          <dd>MIT Graduate level, Systems course, taught by Frans Kaashoek and Nickolai Zeldovich, PDOS CSAIL, MIT, 2018.</dd>
+
+          <dt><i>Effective Programming in C and C++</i> &nbsp;
+             <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-s096-effective-programming-in-c-and-c-january-iap-2014/">[class]</a>
+             <a href="https://github.com/elefthei/secure-C">[source]</a>
+             <a href="https://github.com/elefthei/secure-C/blob/master/secureC.pdf">[slides]</a>
+          </dt>
+          <dd>MIT Open Coursware (OCW), last taught IAP 2015</dd>
+
+          <dt><i>6.857: Computer and Network Security</i> &nbsp;
+             <a href="https://courses.csail.mit.edu/6.857">[class]</a>
+          </dt>
+          <dd>MIT Graduate level, Systems/Theory course, taught by Ronald Rivest, CSAIL, MIT, 2015.</dd>
+
+          <dt><i>6.042: Mathematics for Computer Science</i> &nbsp;
+             <a href="https://courses.csail.mit.edu/6.042">[class]</a>
+          </dt>
+          <dd>MIT Intro level, Theory course, taught by Albert Meyer, CSAIL, MIT, 2015.</dd>
+
+        </dl>
+
+        <h2>Patents</h2>
+        <dl>
+          <dt><i>Privacy preserving System for Machine-Learning Training Data</i></dt>
+          <dd>Filed Mar 2, 2018  Patent issuer and number UFID18-1001</br>
+          </dd>
+
+        </dl>
+    </div>
+  </div>
+</body>
 </html>

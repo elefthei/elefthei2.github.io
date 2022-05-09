@@ -21,3 +21,13 @@ p.hanging {
   background-color: #a5fff9;
 }
 
+a.icon {
+  text-decoration: none;
+  font-size: 60px;
+}
+
+a.fa-brands {
+  text-decoration: none;
+  font-size: 60px;
+}
+

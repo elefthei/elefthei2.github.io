@@ -1,49 +1,31 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-
 body {
-    background: #116386 url("images/bg.jpg") bottom left;
-    background-repeat: repeat-x;
-    background-attachment: fixed;
-    position: absolute;
-    opacity: 1;
-}
-
-#wrapper {
-    height: 100%;
-	width: 100%;
+    background: #fff;
 }
 
 h1, h2, h3, body, input, select, textarea {
-	color: #fff;
-	font-family: 'Source Sans Pro', sans-serif;
+	color: dimgray;
+	font-family: 'arial', sans-serif;
 	font-size: 16pt;
 	letter-spacing: -0.025em;
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 38px;
+    font-family: 'arial', serif;
 	line-height: 1.5em;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
 h2 {
-    font-size: 20px;
-    opacity: 0.75;
-}
-
-
-h3 {
-	color: #000;
-    font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
+    opacity: 0.80;
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'arial', sans-serif;
     font-size: 16px;
 }
-
 
 .content{
     color: #000;
@@ -59,37 +41,21 @@ p {
     margin: 0 1em;
 }
 
-@media only screen and (min-width: 300px) {
-    .masonry-container {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-    }
+body
+{
+    font-family: 'arial',sans-serif;
+    color: dimgray;
+    background-color: #d3e4e8;
+    font-size: 14px;
 }
 
-
-@media only screen and (min-width: 480px) {
-    .masonry-container {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
+.main {
+    max-width: 50%;
+    margin: auto;
 }
 
-@media only screen and (min-width: 768px) {
-    .masonry-container {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
-    }
+.frame {
+    background-color: #ffffff;
+    padding: 20px;
+    clear: both;
 }
-
-@media only screen and (min-width: 960px) {
-    .masonry-container {
-        -moz-column-count: 5;
-        -webkit-column-count: 5;
-        column-count: 5;
-    }
-}
-
-
